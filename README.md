@@ -2,7 +2,7 @@
 
 Thats me, i do Webdevelopment for a living and i guess thats also what this Website is used for... not for Webdevelopment but to spread the word.
 
-As of today this Website is under construction and will accessible to the Public as soon as i have a first Version done. I guess there will be a lot of changes after the first release because im not really a Webdesigner so im still constantly learning new stuff i wanna Implement.
+As of today this Website is under construction and will be accessible to the Public as soon as i have a first Version done. I guess there will be a lot of changes after the first release because im not really a Webdesigner so im still constantly learning new stuff i wanna Implement.
 
 ## Quick start
 
