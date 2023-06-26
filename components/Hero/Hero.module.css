@@ -1,0 +1,61 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.titleSection {
+  position: relative;
+  color: white;
+  margin-left: 7vw;
+  z-index: 1;
+}
+
+.titleSection > h1 {
+  font-size: 8em;
+}
+
+.titleSection > h2 {
+  font-size: 3em;
+}
+
+.customShapeDivider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.customShapeDivider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 304px;
+}
+
+.customShapeDivider .shapeFill {
+  fill: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleSection > h1 {
+    font-size: 5em;
+  }
+  .titleSection > h2 {
+    font-size: 2em;
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .titleSection {
+    margin-top: 18vh;
+  }
+}

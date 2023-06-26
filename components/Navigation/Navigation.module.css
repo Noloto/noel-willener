@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 6vh;
+  color: white;
+  z-index: 1;
+}
+
+.container > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.navItemsSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.socialMediaSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.socialMediaSection > a {
+  margin-right: 20px;
+}
