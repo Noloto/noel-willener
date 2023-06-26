@@ -3,6 +3,8 @@ import styles from './Navigation.module.css';
 import Link from 'next/link';
 import React from 'react';
 
+import { FaBurger } from 'react-icons/fa6';
+
 type OptionalProps = {
   navigationItems?: NavigationItem[];
   socialMediaItems?: SocialMediaItems[];
@@ -14,6 +16,9 @@ const Navigation: React.FC<OptionalProps> = ({
 }) => {
   return (
     <div className={styles.container}>
+      <div className={styles.burgerSection}>
+        <FaBurger size={28} />
+      </div>
       <h1>Logo</h1>
       <div className={styles.navItemsSection}>
         {navigationItems?.map((navigationItem, idx) => {
