@@ -5,9 +5,14 @@ const Hero: React.FC = ({}) => {
   return (
     <>
       <div className={styles.container}>
-        <Image src="/blobs.svg" fill={true} alt="" className={styles.blobs} />
+        <Image
+          src="/images/blobs.svg"
+          fill={true}
+          alt=""
+          className={styles.blobs}
+        />
         <div className={styles.titleSection}>
-          <h1>Noel Willener</h1>
+          <h1>Noël Willener</h1>
           <h2>Webdev by heart</h2>
         </div>
       </div>

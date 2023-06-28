@@ -6,3 +6,8 @@
   padding: 6rem;
   min-height: 100vh;
 }
+
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+}

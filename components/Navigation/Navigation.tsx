@@ -1,7 +1,12 @@
+'use client';
 import styles from './Navigation.module.css';
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+
+import { FaBurger } from 'react-icons/fa6';
+import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 type OptionalProps = {
   navigationItems?: NavigationItem[];
@@ -12,9 +17,38 @@ const Navigation: React.FC<OptionalProps> = ({
   navigationItems,
   socialMediaItems,
 }) => {
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
   return (
     <div className={styles.container}>
-      <h1>Logo</h1>
+      <div className={styles.burgerSection}>
+        <FaBurger
+          className={styles.burgerIcon}
+          size={28}
+          onClick={() => setShowMobileNav((prev) => !prev)}
+        />
+        <AnimatePresence>
+          {showMobileNav && (
+            <motion.div
+              className={styles.mobileNavigation}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              {navigationItems?.map((navigationItem, idx) => {
+                return (
+                  <Link key={idx} href={navigationItem.href}>
+                    {navigationItem.name}
+                  </Link>
+                );
+              })}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <div className={styles.logo}>
+        <Image src="/images/me.svg" width={42} height={36} alt="" />
+      </div>
       <div className={styles.navItemsSection}>
         {navigationItems?.map((navigationItem, idx) => {
           return (
