@@ -47,7 +47,7 @@ const Navigation: React.FC<OptionalProps> = ({
         </AnimatePresence>
       </div>
       <div className={styles.logo}>
-        <Image src="/me.svg" width={42} height={36} alt="" />
+        <Image src="/images/me.svg" width={42} height={36} alt="" />
       </div>
       <div className={styles.navItemsSection}>
         {navigationItems?.map((navigationItem, idx) => {
